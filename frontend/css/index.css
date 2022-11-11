@@ -1,0 +1,38 @@
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-header img {
+    width: 100%;
+}
+
+.login-header {
+    text-decoration: none;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 14px 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.login-header a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) and (min-width: 650px) {
+   .login-header {
+    font-size: 14px;
+   } 
+
+}
