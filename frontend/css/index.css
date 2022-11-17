@@ -1,0 +1,111 @@
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-header img {
+    width: 100%;
+}
+
+.login-header {
+    text-decoration: none;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 14px 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.login-header a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+.banner {
+    background-image: url("../img/banner1.jpg");
+    /*width: 1440px;
+    height: 352px;*/
+    padding: 32px;
+    margin-top: 80px;
+    color: white;
+}
+
+.texto-banner {
+   margin-left: 110px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700; 
+}
+
+h1 p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ver-console {
+    width: 130px;
+    height: 51px;
+    padding: 16px;
+    background: #2A7AE4;
+    color: white;
+    border: none;
+}
+
+.secao-produtos {
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+}
+
+.texto-topicos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+
+.ver-tudo {
+    margin: 30px 0 0;
+    color: #2A7AE4;
+    font-weight: 700;
+}
+
+.texto-itens {
+    display: flex;
+    column-gap: 10px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.nome-do-produto {
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.ver-produto {
+    font-weight: 700;
+    color: #2A7AE4; 
+}
+
+
+
+@media (min-width: 320px) and (min-width: 650px) {
+   .login-header {
+    font-size: 14px;
+   } 
+
+}
