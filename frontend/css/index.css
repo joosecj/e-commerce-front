@@ -111,6 +111,17 @@ li {
     color: #2A7AE4; 
 }
 
+.informacoes {
+    background: #EAF2FD;
+    width: 1440px;
+    height: 368px;
+    display: flex;
+}
+
+.informacoes-da-empresa {
+    
+}
+
 
 
 @media (min-width: 320px) and (min-width: 650px) {
