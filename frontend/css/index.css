@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .logo-header img {
@@ -29,26 +29,25 @@
 }
 
 .banner {
-    background-image: url("../img/banner1.jpg");
-    /*width: 1440px;
-    height: 352px;*/
+    background-image: url("../img/banner-principal.png");
+    width: 100%;
+    height: 100%;
     padding: 32px;
     margin-top: 80px;
     color: white;
 }
 
-.texto-banner {
-   margin-left: 110px;
-}
 
-h1 {
-    font-size: 52px;
-    font-weight: 700; 
-}
-
-h1 p {
+.texto-banner h1 {
     font-size: 22px;
     font-weight: 700;
+    margin: 0 0 0 0;
+}
+
+.texto-banner p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 8px 0;
 }
 
 .ver-console {
@@ -64,25 +63,60 @@ h1 p {
     display: flex;
     flex-direction: column;
     background: #E5E5E5;
+    padding: 0 32px;
 }
 
 .texto-topicos {
     display: flex;
     justify-content: space-between;
-    margin: 0 140px;
+    align-items: center;
+    margin: 16px 0;
 }
 
-h2 {
+.texto-topicos h2 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 22px;
     color: #464646;
 }
 
+.texto-com-seta {
+    display: flex;
+    column-gap: 10px;
+}
+
 .ver-tudo {
-    margin: 30px 0 0;
     color: #2A7AE4;
     font-weight: 700;
 }
+
+.seta {
+    width: 16px;
+    height: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 16px;
+}
+
+.tres {
+    display: none;
+}
+
+.quatro {
+    display: none;
+}
+
+.cinco {
+    display: none;
+}
+
+.seis {
+    display: none;
+}
+
 
 .texto-itens {
     display: flex;
@@ -98,16 +132,138 @@ li {
     font-size: 14px;
     font-weight: 500;
     color: #464646;
+    margin: 8px 0;
+}
+
+.preco-produto {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .ver-produto {
     font-weight: 700;
-    color: #2A7AE4; 
+    font-size: 14px;
+    color: #2A7AE4;
+    margin-bottom: 16px;
+}
+
+.informacoes {
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.logo-contato {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.logo-contato img {
+    width: 120px;
+    text-align: center;
+}
+
+.menu-form {
+    text-align: center;
+}
+
+.menu-form ul {
+    padding: 0;
+}
+
+.menu-form li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.fale-conosco {
+    color: #464646;
+    font-weight: 700;
+    margin: 8px;
+}
+
+.nome-formulario {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 16px;
+
+    height: 56px;
+    row-gap: 5px;
+    box-shadow: 0 2px #A2A2A2;
+}
+
+.nome-formulario label {
+    color: #A2A2A2;
+    font-size: 12px;
+}
+
+#nome {
+    border: none;
+}
+
+#nome::placeholder {
+    color: #464646;;
+}
+
+#mensagem {
+    border: none;
+    padding: 10px 0 0 10px;
+    box-shadow: 0 2px #A2A2A2;
+    resize: none;
+}
+
+.enviar-msg-contato {
+    color: #FFFFFF;
+    font-weight: 400;
+    background: #2A7AE4;
+    border: none;
+    text-align: center;
+    width: 151px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.rodape {
+    text-align: center;
+    background: #FFFFFF;
+    padding: 10px;
+    color: #464646;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #464646;
 }
 
 
+@media (min-width: 320px) and (min-width: 830px) {
 
-@media (min-width: 320px) and (min-width: 650px) {
+   .login-header {
+    font-size: 14px;
+   }
+
+   .texto-banner h1 {
+    font-size: 52px;
+    font-weight: 700;
+    }
+
+    .texto-banner p {
+        font-size: 22px;
+    }
+    
     .logo-header img {
         width: 140%;
     }
@@ -137,6 +293,59 @@ li {
 
     #header-lupa {
         display: none;
+
+    .tres {
+    display: inline;
+     }
+
+    .quatro {
+        display: inline;
     }
 
+    .texto-banner {
+        font-size: 52px;
+    }
+
+
+    .informacoes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-contato {
+        margin-top: 50px;
+    }
+
+    .logo-contato img {
+        width: 140px;
+    }
+
+    .menu-form {
+        text-align: initial;
+    }
+
+    .menu-form li {
+        margin-bottom: 24px;
+    }
+
+    .conosco-container {
+        width: 60%;
+    }
+
+    .container-contato {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 831px) and (min-width: 900px) {
+    .cinco {
+        display: inline;
+    }
+
+    .seis {
+        display: inline;
+    }
+    .container-contato {
+        display: flex;
 }
