@@ -105,6 +105,52 @@ li {
     color: #2A7AE4; 
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EAF2FD;
+}
+
+.form-logo {
+    margin-top: 32px;
+}
+
+.form-logo img {
+    width: 190px;
+}
+
+.menu-form li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.conosco-container h4{
+    text-align: initial;
+    padding: 0 16px;
+
+}
+
+.input-container {
+    padding: 0 16px;
+}
+
+.input-form {
+    width: 100%;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+#nome-form {
+    height: 56px;
+    border: none;
+}
+
+#mensagem-form {
+    height: 82px;
+    border: 0;
+}
 
 
 @media (min-width: 320px) and (min-width: 650px) {
@@ -137,6 +183,10 @@ li {
 
     #header-lupa {
         display: none;
+    }
+
+    .form-container{
+        flex-direction: row;
     }
 
 }
