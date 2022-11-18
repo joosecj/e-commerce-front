@@ -7,7 +7,7 @@
 }
 
 .logo-header img {
-    width: 100%;
+    width: 110%;
 }
 
 .login-header {
@@ -22,6 +22,10 @@
 .login-header a {
     text-decoration: none;
     color: #2A7AE4;
+}
+
+#header-input {
+   display: none;
 }
 
 .banner {
@@ -245,7 +249,6 @@ form {
 }
 
 
-
 @media (min-width: 320px) and (min-width: 830px) {
 
    .login-header {
@@ -260,10 +263,36 @@ form {
     .texto-banner p {
         font-size: 22px;
     }
-
+    
     .logo-header img {
-        width: 160%;
+        width: 140%;
     }
+
+    .login-header {
+    font-size: 14px;
+    } 
+
+    .header-search {
+        width: 100%;
+        max-width: 393px;
+    }
+
+    #header-input {
+        display: inline;
+        background-image: url("../img/lupa.svg");
+        background-repeat: no-repeat;
+        background-position: 350px 10px;
+        padding: 8px 16px;
+        padding-left: 1.3em;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        border: none;
+        width: 393px;
+    }
+
+    #header-lupa {
+        display: none;
 
     .tres {
     display: inline;
@@ -319,6 +348,4 @@ form {
     }
     .container-contato {
         display: flex;
-    }
-
 }
