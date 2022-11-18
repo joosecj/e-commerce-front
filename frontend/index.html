@@ -172,7 +172,7 @@
 
     <footer>
         <section class="informacoes">
-            <div>
+            <div class="logo-footer">
                 <img src="img/Logo.svg" alt="Logo">
             </div>
             <div class="informacoes-da-empresa">
@@ -184,14 +184,17 @@
                 <p>Anucie aqui</p>
             </div>
             <form>
-                <fieldset>
-                    <legend>Fale conosco</legend>
-                    <p>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="André Lisboa">
-                    </p>
-                </fieldset>
+                <legend class="fale-conosco">Fale conosco</legend>
+                <fieldset class="nome-formulario">   
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="André Lisboa">
+                </fieldset> 
+                <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
+                <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
             </form>
+        </section>
+        <section class="rodape">
+            <p>Desenvolvido por <a href="https://github.com/ronaldof16">Ronaldo Fernando</a> e <a href="#">José Carlos</a>.<br> 2022</p>
         </section>
     </footer>
 </body>
