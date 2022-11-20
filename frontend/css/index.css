@@ -293,6 +293,7 @@ form {
 
     #header-lupa {
         display: none;
+    }
 
     .tres {
     display: inline;
@@ -308,12 +309,14 @@ form {
 
 
     .informacoes {
-        flex-direction: row;
-        justify-content: space-between;
+        display: flow-root;
+        
     }
 
     .container-contato {
         margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
     }
 
     .logo-contato img {
@@ -332,13 +335,9 @@ form {
         width: 60%;
     }
 
-    .container-contato {
-        display: flex;
-    }
-
 }
 
-@media (min-width: 831px) and (min-width: 900px) {
+@media (min-width: 891px) {
     .cinco {
         display: inline;
     }
@@ -346,6 +345,5 @@ form {
     .seis {
         display: inline;
     }
-    .container-contato {
-        display: flex;
+
 }
