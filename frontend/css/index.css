@@ -295,8 +295,8 @@ form {
         display: none;
 
     .tres {
-    display: inline;
-     }
+        display: inline;
+    }
 
     .quatro {
         display: inline;
@@ -348,4 +348,5 @@ form {
     }
     .container-contato {
         display: flex;
+    }
 }
