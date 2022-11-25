@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/adicionar-produto.css">
+    <title>Adicionar produto</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo-header">
+                <img src="../img/Logo.svg" alt="Logo">
+            </div>
+            <div class="login-header">
+                <a href="#"><strong>Login</strong></a>
+            </div>
+            <div class="header-search">
+                <input id="header-input" type="text" value="" placeholder="O que deseja encontrar?">
+                <img id="header-lupa" src="../img/lupa.svg" alt="imagem de uma lupa">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form class="formulario-adicionar-produto">
+                <legend class="titulo-adicionar-produto">Adicionar novo produto</legend>
+                <fieldset class="inputs-adicionar">
+                    <label for="url">URL da imagem</label>
+                    <input type="text" id="url" class="dados-produto">
+                </fieldset>
+                <fieldset class="inputs-adicionar">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" id="categoria" placeholder="Console" class="dados-produto">
+                </fieldset>
+                <fieldset class="inputs-adicionar">
+                    <label for="nome-do-produto">Nome do produto</label>
+                    <input type="text" id="nome-do-produto" placeholder="Produto XYZ" class="dados-produto">
+                </fieldset>
+                <fieldset class="inputs-adicionar">
+                    <label for="preco-do-produto">Preço do produto</label>
+                    <input type="text" id="preco-do-produto" placeholder="R$ 60,00" class="dados-produto">
+                </fieldset>
+                <textarea name="descricao" id="descricao-do-produto" cols="30" rows="7" placeholder="Descrição do produto"></textarea>
+                <button type="submit" class="botao-adicionar-produto">Adicionar produto</button>
+            </form>
+        </section>
+        <section class="informacoes">
+            <div class="logo-contato">
+                <img src="../img/Logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>Quem somos nós</li>
+                    <li>Politica de privacidade</li>
+                    <li>Programa de fidelidade</li>
+                    <li>Nossas Lojas</li>
+                    <li>Quero ser franqueado</li>
+                    <li>Anuncie aqui</li>
+                </ul>
+            </nav> 
+            <form>
+                <legend class="fale-conosco">Fale conosco</legend>
+                <fieldset class="nome-formulario">   
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="André Lisboa">
+                </fieldset> 
+                <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
+                <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="rodape">
+            <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
+        </section>
+    </footer>
+</body>
+</html>
