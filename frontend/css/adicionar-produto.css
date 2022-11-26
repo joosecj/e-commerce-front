@@ -31,6 +31,14 @@
     font-size: 14px;
 }
 
+.menu-administrador {
+    background-color: #FFFFFF;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 0 20px;
+    margin-left: 250px;
+}
+
 .formulario-adicionar-produto {
     display: flex;
     flex-direction: column;
