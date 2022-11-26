@@ -1,30 +1,34 @@
 .container-header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+    column-gap: 40px;
+    padding: 32px 0 32px 120px;   
 }
 
 .logo-header img {
     width: 110%;
 }
 
-.login-header {
-    text-decoration: none;
-    color: #2A7AE4;
-    border: 1px solid #2A7AE4;
-    padding: 14px 50px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.login-header a {
-    text-decoration: none;
-    color: #2A7AE4;
+.logo-header img {
+    width: 110%;
 }
 
 #header-input {
-   display: none;
+    padding: 8px 16px;
+    width: 393px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    border: none;
+    background-image: url("../img/lupa.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 360px;
+    outline: none;
+}
+
+#header-input::placeholder {
+    color: #A2A2A2;
+    font-size: 14px;
 }
 
 .formulario-adicionar-produto {
