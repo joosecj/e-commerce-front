@@ -1,30 +1,46 @@
 .container-header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+    column-gap: 40px;
+    padding: 32px 0 32px 120px;   
 }
 
 .logo-header img {
     width: 110%;
 }
 
-.login-header {
-    text-decoration: none;
-    color: #2A7AE4;
-    border: 1px solid #2A7AE4;
-    padding: 14px 50px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.login-header a {
-    text-decoration: none;
-    color: #2A7AE4;
+.logo-header img {
+    width: 110%;
 }
 
 #header-input {
-   display: none;
+    padding: 8px 16px;
+    width: 393px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    border: none;
+    background-image: url("../img/lupa.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 360px;
+    outline: none;
+}
+
+#header-input::placeholder {
+    color: #A2A2A2;
+    font-size: 14px;
+}
+
+.menu-administrador {
+    background-color: #FFFFFF;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 0 20px;
+    margin-left: 250px;
+}
+
+.imagem-lupa {
+    display: none;
 }
 
 .formulario-adicionar-produto {
@@ -91,6 +107,11 @@
     display: flex;
     padding: 64px;
     justify-content: space-around;
+}
+
+.informacoes-empresa {
+    display: flex;
+    flex-direction: row;
 }
 
 ul {
@@ -173,4 +194,73 @@ form {
 .rodape a {
     text-decoration: none;
     color: #464646;
+}
+
+@media screen and (max-width:1120px) {
+    .menu-administrador {
+        margin-left: 0;
+    }
+
+    .informacoes {
+        padding: 32px;
+    }
+
+    .informacoes-empresa {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:910px){
+    .nome-formulario {
+        width: 370px;
+    }
+
+    #header-input {
+        width: 280px;
+        background-position-x: 240px;
+    }
+
+    .container-header {
+        column-gap: 30px;
+        padding: 32px 0 32px 60px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .container-header {
+        padding: 32px 0 32px 20px;
+    }
+
+    #header-input {
+        display: none;
+    }
+
+    .imagem-lupa {
+        display: block;
+    }
+
+    .titulo-adicionar-produto {
+        font-size: 28px;
+    }
+
+    .formulario-adicionar-produto {
+        padding: 30px 20px;
+    }
+
+    .inputs-adicionar {
+        width: 100%;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .informacoes-empresa {
+        align-items: center;
+    }
+
+    .nome-formulario, #descricao-do-produto, .botao-adicionar-produto {
+        width: 100%;
+    }
+
 }
