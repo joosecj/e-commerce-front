@@ -41,7 +41,7 @@
 .texto-banner h1 {
     font-size: 22px;
     font-weight: 700;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .texto-banner p {
@@ -55,8 +55,12 @@
     height: 51px;
     padding: 16px;
     background: #2A7AE4;
-    color: white;
     border: none;
+}
+
+.ver-console a {
+    text-decoration: none;
+    color: white;
 }
 
 .secao-produtos {
@@ -87,6 +91,11 @@
 .ver-tudo {
     color: #2A7AE4;
     font-weight: 700;
+}
+
+.ver-tudo a {
+    color: #2A7AE4;
+    text-decoration: none;
 }
 
 .seta {
@@ -214,6 +223,7 @@ form {
 
 #nome {
     border: none;
+    outline: none;
 }
 
 #nome::placeholder {
@@ -225,6 +235,7 @@ form {
     padding: 10px 0 0 10px;
     box-shadow: 0 2px #A2A2A2;
     resize: none;
+    outline: none;
 }
 
 .enviar-msg-contato {
