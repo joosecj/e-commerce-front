@@ -133,10 +133,6 @@
     margin: 0 auto;
 }
 
-li {
-    list-style: none;
-}
-
 .nome-do-produto {
     font-size: 14px;
     font-weight: 500;
@@ -195,6 +191,10 @@ li {
 form {
     display: flex;
     flex-direction: column; 
+}
+
+li {
+    list-style: none;
 }
 
 .fale-conosco {
@@ -326,10 +326,8 @@ form {
         font-size: 52px;
     }
 
-
     .informacoes {
         display: flow-root;
-        
     }
 
     .container-contato {

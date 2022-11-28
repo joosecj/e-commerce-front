@@ -1,12 +1,17 @@
 .container-header {
     display: flex;
-    column-gap: 40px;
-    padding: 32px 0 32px 120px;    
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .logo-header img {
     width: 110%;
 }
+
+#header-input {
+    display: none;
+ }
 
 #header-input {
     padding: 8px 16px;
@@ -90,26 +95,45 @@
 .informacoes {
     background: #EAF2FD;
     display: flex;
-    padding: 64px;
-    justify-content: space-around;
-}
-
-ul {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    font-weight: 500px;
-    color: #464646;
+    align-items: center;
+    padding: 32px 32px;
 }
 
-li {
-    list-style: none;
-    margin-bottom: 25px;
+.informacoes-desabilitado {
+    display: none;
+}
+
+.logo-contato {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.logo-contato img {
+    width: 120px;
+    text-align: center;
+}
+
+.menu-form {
+    text-align: center;
+}
+
+.menu-form ul {
+    padding: 0;
+}
+
+.menu-form li {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 form {
     display: flex;
     flex-direction: column; 
+}
+
+li {
+    list-style: none;
 }
 
 .fale-conosco {
@@ -125,7 +149,7 @@ form {
     border-radius: 4px;
     border: none;
     margin-bottom: 16px;
-    width: 560px;
+
     height: 56px;
     row-gap: 5px;
     box-shadow: 0 2px #A2A2A2;
@@ -138,6 +162,7 @@ form {
 
 #nome {
     border: none;
+    outline: none;
 }
 
 #nome::placeholder {
@@ -149,6 +174,7 @@ form {
     padding: 10px 0 0 10px;
     box-shadow: 0 2px #A2A2A2;
     resize: none;
+    outline: none;
 }
 
 .enviar-msg-contato {
@@ -174,4 +200,111 @@ form {
 .rodape a {
     text-decoration: none;
     color: #464646;
+}
+
+@media (min-width: 320px) and (min-width: 830px) {
+
+   .login-header {
+    font-size: 14px;
+   }
+
+   .texto-banner h1 {
+    font-size: 52px;
+    font-weight: 700;
+    }
+
+    .texto-banner p {
+        font-size: 22px;
+    }
+    
+    .logo-header img {
+        width: 140%;
+    }
+
+    .login-header {
+    font-size: 14px;
+    } 
+
+    .header-search {
+        width: 100%;
+        max-width: 393px;
+    }
+
+    #header-input {
+        display: inline;
+        background-image: url("../img/lupa.svg");
+        background-repeat: no-repeat;
+        background-position: 350px 10px;
+        padding: 8px 16px;
+        padding-left: 1.3em;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        border: none;
+        width: 393px;
+    }
+
+    #header-lupa {
+        display: none;
+    }
+
+    .tres {
+        display: inline;
+    }
+
+    .quatro {
+        display: inline;
+    }
+
+    .texto-banner {
+        font-size: 52px;
+    }
+
+
+    .informacoes {
+        display: flow-root;
+        
+    }
+
+    .container-contato {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-contato img {
+        width: 140px;
+    }
+
+    .menu-form {
+        text-align: initial;
+    }
+
+    .menu-form li {
+        margin-bottom: 24px;
+    }
+
+    .conosco-container {
+        width: 60%;
+    }
+
+}
+
+
+@media (min-width: 1100px) {
+    .cinco {
+        display: inline;
+    }
+
+    .seis {
+        display: inline;
+    }
+
+    .informacoes-desabilitado {
+        display: inline;
+    }
+
+    .card-informacao-menu {
+        display: none;
+    }
 }

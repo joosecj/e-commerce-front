@@ -11,9 +11,14 @@
 <body>
     <header>
         <div class="container-header">
-                <img src="../img/Logo.svg" alt="Logo" class="logo-header">
-                <input id="header-input" type="text" placeholder="O que deseja encontrar?">
-        </div>
+                <div class="logo-header">
+                    <img src="../img/Logo.svg" alt="Logo">
+                </div>
+                <div class="header-search">
+                    <input id="header-input" type="text" value="" placeholder="O que deseja encontrar?">
+                    <img id="header-lupa" src="../img/lupa.svg" alt="imagem de uma lupa">
+                </div>
+            </div>
     </header>
     <main>
         <section class="secao-produtos">
@@ -79,7 +84,9 @@
                     </div>
                     <div class="card quatro">
                             <img src="../img/console4.svg" alt="Imagem do produto">
-                            <p class="nome-do-produto">Controle XYZ</p>
+                            <p class="nome-do    .card-container {
+                                flex-wrap: nowrap;
+                            }-produto">Controle XYZ</p>
                             <p class="preco-produto">R$ 60,00</p>
                             <p class="ver-produto">#1111111</p>
                     </div>
@@ -134,29 +141,49 @@
                 </div>  
         </section>
         <section class="informacoes">
-            <div class="logo-contato">
-                <img src="../img/Logo.svg" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>Quem somos nós</li>
-                    <li>Politica de privacidade</li>
-                    <li>Programa de fidelidade</li>
-                    <li>Nossas Lojas</li>
-                    <li>Quero ser franqueado</li>
-                    <li>Anuncie aqui</li>
-                </ul>
-            </nav> 
-            <form>
-                <legend class="fale-conosco">Fale conosco</legend>
-                <fieldset class="nome-formulario">   
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="André Lisboa">
-                </fieldset> 
-                <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
-                <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
-            </form>
-        </section>
+                <div class="container-contato">
+                    <div class="card-informacao-menu">
+                        <div class="logo-contato">
+                            <img src="../img/Logo.svg" alt="Logo">
+                        </div>
+                        <nav class="menu-form">
+                            <ul>
+                                <li>Quem somos nós</li>
+                                <li>Politica de privacidade</li>
+                                <li>Programa de fidelidade</li>
+                                <li>Nossas Lojas</li>
+                                <li>Quero ser franqueado</li>
+                                <li>Anuncie aqui</li>
+                            </ul>
+                        </nav> 
+                    </div>
+                    <div class="logo-contato informacoes-desabilitado">
+                        <img src="../img/Logo.svg" alt="Logo">
+                    </div>
+                    <nav class="menu-form informacoes-desabilitado">
+                        <ul>
+                            <li>Quem somos nós</li>
+                            <li>Politica de privacidade</li>
+                            <li>Programa de fidelidade</li>
+                            <li>Nossas Lojas</li>
+                            <li>Quero ser franqueado</li>
+                            <li>Anuncie aqui</li>
+                        </ul>
+                    </nav> 
+                    
+                    <div class="conosco-container">
+                        <form>
+                            <legend class="fale-conosco">Fale conosco</legend>
+                            <fieldset class="nome-formulario">   
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="André Lisboa">
+                            </fieldset> 
+                            <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
+                            <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
+                        </form>
+                    </div>
+                </div>
+            </section>
     </main>
         <footer>
             <section class="rodape">
