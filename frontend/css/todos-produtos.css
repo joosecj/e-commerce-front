@@ -1,8 +1,8 @@
 .container-header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 20px 0;
+    column-gap: 40px;
+    padding: 32px 0 32px 120px;
 }
 
 .logo-header img {
