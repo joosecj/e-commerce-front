@@ -12,7 +12,10 @@
     <header>
         <div class="container-header">
             <img src="../img/Logo.svg" alt="Logo" class="logo-header">
-            <input id="header-input" type="text" placeholder="O que deseja encontrar?">
+            <div class="header-search">
+                <input id="header-input" type="text" value="" placeholder="O que deseja encontrar?">
+                <img id="header-lupa" src="../img/lupa.svg" alt="imagem de uma lupa">
+            </div>
         </div>
     </header>
     <main>
@@ -25,28 +28,48 @@
             </form>
         </section>
         <section class="informacoes">
-            <div class="logo-contato">
-                <img src="../img/Logo.svg" alt="Logo">
+            <div class="container-contato">
+                <div class="card-informacao-menu">
+                    <div class="logo-contato">
+                        <img src="../img/Logo.svg" alt="Logo">
+                    </div>
+                    <nav class="menu-form">
+                        <ul>
+                            <li>Quem somos nós</li>
+                            <li>Politica de privacidade</li>
+                            <li>Programa de fidelidade</li>
+                            <li>Nossas Lojas</li>
+                            <li>Quero ser franqueado</li>
+                            <li>Anuncie aqui</li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="logo-contato informacoes-desabilitado">
+                    <img src="../img/Logo.svg" alt="Logo">
+                </div>
+                <nav class="menu-form informacoes-desabilitado">
+                    <ul>
+                        <li>Quem somos nós</li>
+                        <li>Politica de privacidade</li>
+                        <li>Programa de fidelidade</li>
+                        <li>Nossas Lojas</li>
+                        <li>Quero ser franqueado</li>
+                        <li>Anuncie aqui</li>
+                    </ul>
+                </nav> 
+                
+                <div class="conosco-container">
+                    <form>
+                        <legend class="fale-conosco">Fale conosco</legend>
+                        <fieldset class="nome-formulario">   
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="André Lisboa">
+                        </fieldset> 
+                        <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
+                        <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
+                    </form>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>Quem somos nós</li>
-                    <li>Politica de privacidade</li>
-                    <li>Programa de fidelidade</li>
-                    <li>Nossas Lojas</li>
-                    <li>Quero ser franqueado</li>
-                    <li>Anuncie aqui</li>
-                </ul>
-            </nav>
-            <form>
-                <legend class="fale-conosco">Fale conosco</legend>
-                <fieldset class="nome-formulario">   
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="André Lisboa">
-                </fieldset> 
-                <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
-                <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
-            </form>
         </section>
     </main>
     <footer>
@@ -56,4 +79,3 @@
     </footer>
 </body>
 </html>
-    </main>
