@@ -214,3 +214,9 @@ li {
         display: none;
     }
 }
+
+@media (max-width: 450px) {
+    .input-login, .botao-entrar {
+        width: 90%;
+    }
+} 
