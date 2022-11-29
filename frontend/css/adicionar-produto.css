@@ -78,6 +78,7 @@
 .dados-produto {
     border: none;
     color: #464646;
+    outline: none;
 }
 
 #descricao-do-produto {
@@ -87,6 +88,7 @@
     resize: none;
     width: 559px;
     height: 82px;
+    outline: none;
 }
 
 #descricao-do-produto::placeholder {
@@ -158,6 +160,7 @@ form {
 
 #nome {
     border: none;
+    outline: none;
 }
 
 #nome::placeholder {
@@ -169,6 +172,7 @@ form {
     padding: 10px 0 0 10px;
     box-shadow: 0 2px #A2A2A2;
     resize: none;
+    outline: none;
 }
 
 .enviar-msg-contato {
