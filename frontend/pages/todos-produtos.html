@@ -173,19 +173,23 @@
                             <legend class="fale-conosco">Fale conosco</legend>
                             <fieldset class="nome-formulario">   
                                 <label for="nome">Nome</label>
-                                <input type="text" id="nome" placeholder="André Lisboa" required>
+                                <input type="text" id="nome" class="texto" placeholder="André Lisboa" oninput="validarNome()">
+                                <span class="alerta">O nome tem que ter no mínimo 2 letras</span>
                             </fieldset> 
-                            <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem" required></textarea>
+                            <textarea name="msg" id="mensagem" class="texto" cols="30" rows="7" placeholder="Escreva sua mensagem" oninput="validarMensagem()"></textarea>
+                            <span class="alerta">A mensagem tem que ter no mínimo 6 letras</span>
                             <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
                         </form>
                     </div>
                 </div>
             </section>
     </main>
-        <footer>
-            <section class="rodape">
-                <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
-            </section>
-        </footer>
+    <footer>
+        <section class="rodape">
+            <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
+        </section>
+    </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>

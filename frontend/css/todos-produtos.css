@@ -149,7 +149,7 @@ li {
     border-radius: 4px;
     border: none;
     margin-bottom: 16px;
-
+    border-radius: 5px;
     height: 56px;
     row-gap: 5px;
     box-shadow: 0 2px #A2A2A2;
@@ -162,11 +162,19 @@ li {
 
 #nome {
     border: none;
+    border-radius: 5px;
     outline: none;
 }
 
 #nome::placeholder {
     color: #464646;;
+}
+
+.alerta {
+    margin: 10px 0 5px;
+    font-size: 11px;
+    color: red;
+    display: none;
 }
 
 #mensagem {
@@ -175,6 +183,8 @@ li {
     box-shadow: 0 2px #A2A2A2;
     resize: none;
     outline: none;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .enviar-msg-contato {
