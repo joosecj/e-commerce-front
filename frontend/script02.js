@@ -1,7 +1,7 @@
-let form = document.querySelector('.form-conosco');
+let form2 = document.querySelector('#form2');
+let msg = document.querySelectorAll('.alerta');
 let campos = document.querySelectorAll('.texto');
 let nome = document.querySelector('#nome');
-let msg = document.querySelectorAll('.alerta');
 
 function setError(index) {
     campos[index].style.border = '2px solid red';
@@ -29,7 +29,7 @@ function validarMensagem() {
     }
 }
 
-form.addEventListener('submit', (event) => {
+form2.addEventListener('submit', (event) => {
     event.preventDefault();
     validarNome();
     validarMensagem();
