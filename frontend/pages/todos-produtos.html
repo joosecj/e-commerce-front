@@ -20,7 +20,6 @@
     </header>
     <main>
         <section class="secao-produtos">
-                <a href=""></a>
                 <div class="texto-topicos">
                     <h2>Todos os produtos</h2>
                     <button class="botao-adicionar"><a href="adicionar-produto.html">Adicionar produto</a></button>
@@ -117,12 +116,6 @@
                             <p class="nome-do-produto">Controle e console XYZ</p>
                             <p class="preco-produto">R$ 60,00</p>
                             <p class="ver-produto">#1111111</p>
-                    </div><div class="container-header">
-                        <img src="../img/Logo.svg" alt="Logo" class="logo-header">
-                        <div class="header-search">
-                            <input id="header-input" type="text" value="" placeholder="O que deseja encontrar?">
-                            <img id="header-lupa" src="../img/lupa.svg" alt="imagem de uma lupa">
-                        </div>
                     </div>
                     <div class="card quatro">
                             <img src="../img/diversos4.svg" alt="Imagem do produto">
@@ -180,19 +173,23 @@
                             <legend class="fale-conosco">Fale conosco</legend>
                             <fieldset class="nome-formulario">   
                                 <label for="nome">Nome</label>
-                                <input type="text" id="nome" placeholder="André Lisboa">
+                                <input type="text" id="nome" class="texto" placeholder="André Lisboa" oninput="validarNome()">
+                                <span class="alerta">O nome tem que ter no mínimo 2 letras</span>
                             </fieldset> 
-                            <textarea name="msg" id="mensagem" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
+                            <textarea name="msg" id="mensagem" class="texto" cols="30" rows="7" placeholder="Escreva sua mensagem" oninput="validarMensagem()"></textarea>
+                            <span class="alerta">A mensagem tem que ter no mínimo 6 letras</span>
                             <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
                         </form>
                     </div>
                 </div>
             </section>
     </main>
-        <footer>
-            <section class="rodape">
-                <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
-            </section>
-        </footer>
+    <footer>
+        <section class="rodape">
+            <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
+        </section>
+    </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>
