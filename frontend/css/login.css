@@ -40,10 +40,17 @@
     box-shadow: 0 2px #A2A2A2;
     border: none;
     padding-left: 15px;
+    outline: none;
 }
 
 .input-login::placeholder {
     color: #A2A2A2;
+}
+
+#alerta-email, #alerta-senha {
+    font-size: 11px;
+    color: red;
+    display: none;
 }
 
 .botao-entrar {

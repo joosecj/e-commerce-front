@@ -22,8 +22,10 @@
         <section>
             <form class="iniciar-sessao">
                 <legend class="titulo-iniciar-sessao">Inciar sessao</legend>
-                <input type="email" class="input-login" placeholder="Escreva seu email" required>
-                <input type="password" class="input-login" placeholder="Escreva sua senha" required>
+                <input type="email" class="input-login" id="email" placeholder="Escreva seu email" required>
+                <span id="alerta-email">Digite um email válido</span>
+                <input type="password" class="input-login" id="senha" placeholder="Escreva sua senha" required> 
+                <span id="alerta-senha" >"Sua senha deve ter entre 4 e 8 digitos"</span>
                 <button type="submit" class="botao-entrar">Entrar</button>
             </form>
         </section>
@@ -79,7 +81,7 @@
             <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
         </section>
     </footer>
-
-    <script src="../script.js"></script>
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/script02.js"></script>
 </body>
 </html>
