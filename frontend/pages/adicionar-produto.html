@@ -23,22 +23,22 @@
                 <form class="formulario-adicionar-produto">
                     <legend class="titulo-adicionar-produto">Adicionar novo produto</legend>
                     <fieldset class="inputs-adicionar">
-                        <label for="url">URL da imagem</label>
-                        <input type="text" id="url" class="dados-produto">
+                        <label for="url" class="label-inputs" >URL da imagem</label>
+                        <input type="text" id="url" class="dados-produto" required>
                     </fieldset>
                     <fieldset class="inputs-adicionar">
-                        <label for="categoria">Categoria</label>
-                        <input type="text" id="categoria" placeholder="Console" class="dados-produto">
+                        <label for="categoria" class="label-inputs">Categoria</label>
+                        <input type="text" id="categoria" placeholder="Console" class="dados-produto" required>
                     </fieldset>
                     <fieldset class="inputs-adicionar">
-                        <label for="nome-do-produto">Nome do produto</label>
-                        <input type="text" id="nome-do-produto" placeholder="Produto XYZ" class="dados-produto">
+                        <label for="nome-do-produto" class="label-inputs">Nome do produto</label>
+                        <input type="text" id="nome-do-produto" placeholder="Produto XYZ" class="dados-produto" required>
                     </fieldset>
                     <fieldset class="inputs-adicionar">
-                        <label for="preco-do-produto">Preço do produto</label>
-                        <input type="text" id="preco-do-produto" placeholder="R$ 60,00" class="dados-produto">
+                        <label for="preco-do-produto" class="label-inputs">Preço do produto</label>
+                        <input type="text" id="preco-do-produto" placeholder="R$ 60,00" class="dados-produto" required>
                     </fieldset>
-                    <textarea name="descricao" id="descricao-do-produto" cols="30" rows="7" placeholder="Descrição do produto"></textarea>
+                    <textarea name="descricao" id="descricao-do-produto" cols="30" rows="7" placeholder="Descrição do produto" required></textarea>
                     <button type="submit" class="botao-adicionar-produto">Adicionar produto</button>
                 </form>
             </div>
@@ -63,11 +63,11 @@
             <form id="form2">
                 <legend class="fale-conosco">Fale conosco</legend>
                 <fieldset class="nome-formulario">   
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" class="texto" placeholder="André Lisboa" oninput="validarNome()">
+                    <label for="nome" id="label-input">Nome</label>
+                    <input type="text" id="nome" class="texto" placeholder="André Lisboa" oninput=validarNome()>
                     <span class="alerta">O nome tem que ter no mínimo 2 letras</span>
                 </fieldset> 
-                <textarea name="msg" id="mensagem" class="texto" cols="30" rows="7" placeholder="Escreva sua mensagem" oninput="validarMensagem()"></textarea>
+                <textarea name="msg" id="mensagem" class="texto" cols="30" rows="7" placeholder="Escreva sua mensagem" oninput=validarMensagem()></textarea>
                 <span class="alerta">A mensagem tem que ter no mínimo 6 letras</span>
                 <button class="enviar-msg-contato" type="submit">Enviar mensagem</button>       
             </form>
@@ -78,7 +78,7 @@
             <p>Desenvolvido por <a href="https://github.com/ronaldof16" target="_blank">Ronaldo Fernando</a> e <a href="https://github.com/joosecj" target="_blank">José Carlos</a>.<br> 2022</p>
         </section>
     </footer>
-
-    <script src="../script02.js"></script>
+    <script src="../scripts/adicionar-produto.js"></script>
+    <script src="../scripts/script02.js"></script>
 </body>
 </html>

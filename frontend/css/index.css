@@ -425,5 +425,9 @@ li {
     .texto-banner p {
         font-size: 13px;
     }
+
+    .banner {
+        background-color: #E5E5E5;
+    }
 }
 
