@@ -12,12 +12,11 @@ Com isso foi possível praticar e compreender melhor a semantica utlizada no htm
 Projeto implementado na nuvem, com deploy no vercel [aqui](https://e-commerce-front-dun.vercel.app/).
 
 ##
-
-<h2>Veja o projeto</h2>
-
+## Veja o projeto
 Experimente live demo:
 
 ![FrontEnd](https://i.imgur.com/z77HcBS.gif)
+
 
 
 ## Como criar e executar o MRBlog localmente
