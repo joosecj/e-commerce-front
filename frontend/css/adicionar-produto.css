@@ -1,3 +1,16 @@
+:root {
+    --text-blue: #2A7AE4;
+    --text-white: #FFF;
+    --text-dark-grey: #464646;
+    --text-grey: #A2A2A2;
+    --text-red: #FF0000;
+
+    --bg-light-grey: #E5E5E5;
+    --bg-light-white: #EAF2FD; 
+    --bg-blue: #2A7AE4;
+    --bg-white: #FFF;
+}
+
 .container-header {
     display: flex;
     column-gap: 40px;
@@ -16,7 +29,7 @@
     padding: 8px 16px;
     width: 393px;
     height: 40px;
-    background-color: #F5F5F5;
+    background-color: var(--bg-light-grey);
     border-radius: 20px;
     border: none;
     background-image: url("../img/lupa.svg");
@@ -27,14 +40,14 @@
 }
 
 #header-input::placeholder {
-    color: #A2A2A2;
+    color: var(--text-grey);
     font-size: 14px;
 }
 
 .menu-administrador {
-    background-color: #FFFFFF;
-    color: #2A7AE4;
-    border: 1px solid #2A7AE4;
+    background-color: var(--bg-white);
+    color: var(--text-blue);
+    border: 1px solid var(--text-blue);
     padding: 0 20px;
     margin-left: 250px;
 }
@@ -48,43 +61,43 @@
     flex-direction: column;
     padding: 64px 0;
     align-items: center;
-    background: #E5E5E5;
+    background: var(--bg-light-grey);
     row-gap: 10px;
 }
 
 .titulo-adicionar-produto {
     font-weight: 700;
     font-size: 32px;
-    color: #464646;
+    color: var(--text-dark-grey);
 }
 
 .inputs-adicionar {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: var(--bg-white);
     border-radius: 4px;
     border: none;
     width: 560px;
     height: 56px;
     row-gap: 5px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
 }
 
 .inputs-adicionar label {
     font-size: 12px;
-    color: #A2A2A2;
+    color: var(--text-grey);
 }
 
 .dados-produto {
     border: none;
-    color: #464646;
+    color: var(--text-dark-grey);
     outline: none;
 }
 
 #descricao-do-produto {
     border: none;
     padding: 10px 0 0 10px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
     resize: none;
     width: 559px;
     height: 82px;
@@ -92,20 +105,20 @@
 }
 
 #descricao-do-produto::placeholder {
-    color: #A2A2A2;
+    color: var(--text-grey);
 }
 
 .botao-adicionar-produto {
-    background: #2A7AE4;
+    background: var(--bg-blue);
     padding: 16px;
     border: none;
-    color: #FFFFFF; 
+    color: var(--bg-white); 
     width: 560px;
     height: 56px;
 }
 
 .informacoes {
-    background: #EAF2FD;
+    background: var(--bg-light-white);
     display: flex;
     padding: 64px;
     justify-content: space-around;
@@ -121,7 +134,7 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     font-weight: 500px;
-    color: #464646;
+    color: var(--text-dark-grey);
 }
 
 li {
@@ -135,7 +148,7 @@ form {
 }
 
 .fale-conosco {
-    color: #464646;
+    color: var(--text-dark-grey);
     font-weight: 700;
     margin: 8px;
 }
@@ -143,18 +156,18 @@ form {
 .nome-formulario {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: var(--bg-white);
     border-radius: 4px;
     border: none;
     margin-bottom: 16px;
     width: 560px;
     height: 56px;
     row-gap: 5px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
 }
 
 .nome-formulario label {
-    color: #A2A2A2;
+    color: var(--text-grey);
     font-size: 12px;
 }
 
@@ -165,20 +178,20 @@ form {
 }
 
 #nome::placeholder {
-    color: #464646;;
+    color: var(--text-dark-grey);;
 }
 
 .alerta {
     margin: 10px 0 5px;
     font-size: 11px;
-    color: red;
+    color: var(--text-red);
     display: none;
 }
 
 #mensagem {
     border: none;
     padding: 10px 0 0 10px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
     resize: none;
     outline: none;
     margin-top: 10px;
@@ -186,9 +199,9 @@ form {
 }
 
 .enviar-msg-contato {
-    color: #FFFFFF;
+    color: var(--bg-white);
     font-weight: 400;
-    background: #2A7AE4;
+    background: var(--bg-blue);
     border: none;
     text-align: center;
     width: 151px;
@@ -198,16 +211,16 @@ form {
 
 .rodape {
     text-align: center;
-    background: #FFFFFF;
+    background: var(--bg-white);
     padding: 10px;
-    color: #464646;
+    color: var(--text-dark-grey);
     font-size: 13px;
     font-weight: 700;
 }
 
 .rodape a {
     text-decoration: none;
-    color: #464646;
+    color: var(--text-dark-grey);
 }
 
 @media screen and (max-width:1120px) {

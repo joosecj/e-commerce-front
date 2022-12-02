@@ -9,9 +9,8 @@
 Projeto desenvolvido teve o objetivo de criar um site de E-Commerce responsivo, utilizando um modelo disponibilizado no figma, com as tecnologias HTML, CSS e javascprit para validação de alguns campos.
 Com isso foi possível praticar e compreender melhor a semantica utlizada no html, juntamente com a estilização das páginas usando CSS e com isso a usabilidade do Git e GitHub para versionamento do código trabalhando em equipe, usando branch's para cada etapa do projeto. 
 ##
-Projeto implementado na nuvem, com deploy no vercel [aqui](https://e-commerce-front-dun.vercel.app/).
+Projeto implementado na nuvem, com deploy no vercel, veja [aqui](https://e-commerce-front-dun.vercel.app/).
 
-##
 ## Veja o projeto
 Experimente live demo:
 

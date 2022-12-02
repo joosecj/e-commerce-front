@@ -1,3 +1,14 @@
+:root {
+    --text-blue: #2A7AE4;
+    --text-white: #FFF;
+    --text-dark-grey: #464646;
+    --text-grey: #A2A2A2;
+    --text-red: #FF0000;
+
+    --bg-light-grey: #E5E5E5;
+    --bg-light-white: #EAF2FD; 
+}
+
 
 .container-header {
     display: flex;
@@ -12,8 +23,8 @@
 
 .login-header {
     text-decoration: none;
-    color: #2A7AE4;
-    border: 1px solid #2A7AE4;
+    color: var(--text-blue);
+    border: 1px solid var(--text-blue);
     padding: 14px 50px;
     font-size: 12px;
     font-weight: 700;
@@ -21,7 +32,7 @@
 
 .login-header a {
     text-decoration: none;
-    color: #2A7AE4;
+    color: var(--text-blue);
 }
 
 #header-input {
@@ -35,7 +46,7 @@
     background-repeat: no-repeat;
     padding: 32px;
     margin-top: 30px;
-    color: white;
+    color: var(--text-white);
 }
 
 
@@ -55,19 +66,19 @@
     width: 130px;
     height: 51px;
     padding: 16px;
-    background: #2A7AE4;
+    background: var(--text-blue);
     border: none;
 }
 
 .ver-console a {
     text-decoration: none;
-    color: white;
+    color: var(--text-white);
 }
 
 .secao-produtos {
     display: flex;
     flex-direction: column;
-    background: #E5E5E5;
+    background: var(--bg-light-grey);
     padding: 0 32px;
 }
 
@@ -81,7 +92,7 @@
 .texto-topicos h2 {
     font-weight: 700;
     font-size: 22px;
-    color: #464646;
+    color: var(--text-dark-grey);
 }
 
 .texto-com-seta {
@@ -90,12 +101,12 @@
 }
 
 .ver-tudo {
-    color: #2A7AE4;
+    color: var(--text-blue);
     font-weight: 700;
 }
 
 .ver-tudo a {
-    color: #2A7AE4;
+    color: var(--text-blue);
     text-decoration: none;
 }
 
@@ -137,7 +148,7 @@
 .nome-do-produto {
     font-size: 14px;
     font-weight: 500;
-    color: #464646;
+    color: var(--text-dark-grey);
     margin: 8px 0;
 }
 
@@ -150,12 +161,12 @@
 .ver-produto {
     font-weight: 700;
     font-size: 14px;
-    color: #2A7AE4;
+    color: var(--text-blue);
     margin-bottom: 16px;
 }
 
 .informacoes {
-    background: #EAF2FD;
+    background: var(--bg-light-white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +210,7 @@ li {
 }
 
 .fale-conosco {
-    color: #464646;
+    color: var(--text-dark-grey);
     font-weight: 700;
     margin: 8px;
 }
@@ -207,17 +218,17 @@ li {
 .nome-formulario {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: var(--text-white);
     border-radius: 4px;
     border: none;
     margin-bottom: 16px;
     height: 56px;
     row-gap: 5px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
 }
 
 .nome-formulario label {
-    color: #A2A2A2;
+    color: var(--text-grey);
     font-size: 12px;
 }
 
@@ -228,20 +239,20 @@ li {
 }
 
 #nome::placeholder {
-    color: #464646;;
+    color: var(--text-dark-grey);;
 }
 
 .alerta {
     margin: 10px 0 5px;
     font-size: 11px;
-    color: red;
+    color: var(--text-red);
     display: none;
 }
 
 #mensagem {
     border: none;
     padding: 10px 0 0 10px;
-    box-shadow: 0 2px #A2A2A2;
+    box-shadow: 0 2px var(--text-grey);
     resize: none;
     outline: none;
     margin-top: 10px;
@@ -249,9 +260,9 @@ li {
 }
 
 .enviar-msg-contato {
-    color: #FFFFFF;
+    color: var(--text-white);
     font-weight: 400;
-    background: #2A7AE4;
+    background: var(--text-blue);
     border: none;
     text-align: center;
     width: 151px;
@@ -261,16 +272,16 @@ li {
 
 .rodape {
     text-align: center;
-    background: #FFFFFF;
+    background: var(--text-white);
     padding: 10px;
-    color: #464646;
+    color: var(--text-dark-grey);
     font-size: 13px;
     font-weight: 700;
 }
 
 .rodape a {
     text-decoration: none;
-    color: #464646;
+    color: var(--text-dark-grey);
 }
 
 
@@ -427,7 +438,7 @@ li {
     }
 
     .banner {
-        background-color: #E5E5E5;
+        background-color: var(--bg-light-grey);
     }
 }
 
