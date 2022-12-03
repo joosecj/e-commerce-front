@@ -24,7 +24,7 @@
                     <legend class="titulo-adicionar-produto">Adicionar novo produto</legend>
                     <fieldset class="inputs-adicionar">
                         <label for="url" class="label-inputs" >URL da imagem</label>
-                        <input type="text" id="url" class="dados-produto" required>
+                        <input type="text" id="url" class="dados-produto" required title="O enderço de ter o seguinte formato: www.*****.****">
                     </fieldset>
                     <fieldset class="inputs-adicionar">
                         <label for="categoria" class="label-inputs">Categoria</label>
@@ -39,7 +39,7 @@
                         <input type="text" id="preco-do-produto" placeholder="R$ 60,00" class="dados-produto" required>
                     </fieldset>
                     <textarea name="descricao" id="descricao-do-produto" cols="30" rows="7" placeholder="Descrição do produto" required></textarea>
-                    <button type="submit" class="botao-adicionar-produto">Adicionar produto</button>
+                    <button type="text" class="botao-adicionar-produto" onclick="adicionar()">Adicionar produto</button>
                 </form>
             </div>
 
