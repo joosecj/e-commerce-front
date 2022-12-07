@@ -68,10 +68,7 @@
     padding: 16px;
     background: var(--text-blue);
     border: none;
-}
-
-.ver-console a {
-    text-decoration: none;
+    cursor: pointer;
     color: var(--text-white);
 }
 
